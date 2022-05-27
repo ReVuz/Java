@@ -25,18 +25,18 @@ public class Area {
 				
 			if (num==1) {
 				System.out.println("Enter the length and breadth of rectangle : ");
-				int length = obj.nextInt();
-				int breadth = obj.nextInt();
+				int length = Integer.parseInt(args[0]);
+				int breadth = Integer.parseInt(args[1]);
 				System.out.println("Area of rectangle : "+a.area(length,breadth));
 			}
 			else if (num==2) {
 				System.out.println("Enter the side of square : ");
-				int side = obj.nextInt();
+				int side = Integer.parseInt(args[0]);
 				System.out.println("Area of Square : "+a.area(side));
 		}
 			else if (num==3) {
 				System.out.println("Enter radius of circle : ");
-				float radius = obj.nextFloat();
+				float radius = Float.parseFloat(args[0]);
 				System.out.println("Area of Circle : "+a.area(radius));
 		}
 			else {
